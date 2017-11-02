@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Php Email Form</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<form action="main.php" method="POST" enctype="multipart/form-data">
+			<label for="name">Name</label>
+			<input type="text" name="name">
+			<label for="age">Age</label>
+			<input type="number" name="age">
+			<label for="phone">Phone</label>
+			<input type="tel" name="phone" value="">
+			<label for="email">Email</label>
+			<input type="email" name="email">
+			<label for="text">Message</label>
+			<textarea rows="6" cols="40" name="text" placeholder="Send us a message!"></textarea>
+			<button type="submit" value="submit">Submit
+		</button>
+		</form>
+	</body>
+
+</html>

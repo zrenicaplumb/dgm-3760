@@ -1,0 +1,60 @@
+form{
+	
+}
+label {
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+}
+input{
+	width: 60%;
+	
+	display: block;
+}
+p{
+	
+}
+button{
+	display: block;
+	margin: 20px 0;
+	border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #062F4F;
+    padding: 10px;
+    font-size: 14px;
+}
+fieldset{
+	margin: 20px 0;
+	border-radius: 10px;
+	background: #FF383F;
+	border: none;
+}
+nav {
+    background: #FF383F;
+    border-radius: 10px;
+}
+ul {
+    text-align: center;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin: 13px 0;
+}
+a {
+    font-size: 16px;
+    margin: 0 15px;
+}
+footer{
+    width:45%;
+    margin: auto;
+}
+.box{
+    width: 40%;
+    margin: auto;
+    background: #EFEFEF;
+    padding: 20px;
+    border: 1px solid lightgray;
+    font-family: sans-serif;
+}

@@ -1,0 +1,31 @@
+form{
+	margin: auto;
+	padding: 20px 100px;
+	border: 1px solid #333;
+	background: royalblue;
+	text-align: center;
+	color: #fff;
+	width: 50%;
+}
+input, textarea{
+	padding: 7px;
+	margin: 12px;
+}
+
+label{
+	font-size: 19px;
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+button{
+	margin: auto;
+	display: block;
+	background: gray;
+	color: #fff;
+	border: none;
+	padding: 13px 35px;
+	font-size: 20px;
+	cursor: pointer;
+	
+}
