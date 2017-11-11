@@ -1,0 +1,89 @@
+form{
+	margin: auto;
+	width: 50%;
+	background: lightgray;
+	padding: 20px;
+	padding-bottom: 5px;
+
+}
+label {
+    display: block;
+    color: #fff;
+    margin: 5px 0;
+}
+input{
+	width: 60%;
+	
+	display: block;
+}
+p{
+	
+}
+button{
+	display: block;
+	margin: 20px 0;
+	border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #062F4F;
+    padding: 10px;
+    font-size: 14px;
+}
+fieldset{
+	margin: 20px 0;
+	border-radius: 10px;
+	background: rgb(31,80,141);
+	border: none;
+}
+nav {
+    background: rgb(31,80,141);
+    border-radius: 10px;
+    width: 55%;
+    margin: auto;
+}
+ul {
+    text-align: center;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin: 13px 0;
+}
+a {
+    font-size: 16px;
+    margin: 0 15px;
+    color: #fff;
+}
+input,select,textarea{
+	margin:10px 0;
+}
+.box{
+    width: 40%;
+    margin: auto;
+    background: #EFEFEF;
+    padding: 20px;
+    border: 1px solid lightgray;
+    font-family: sans-serif;
+}
+a.approve, a.delete{
+    background:green;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+a.delete{
+    background: red;
+    
+}
+article{
+    border-bottom: 1px dotted black;
+    border-top:1px dotted black;
+    padding: 8px 0;
+}
+p.topic{
+    margin: 2px 0;
+    font-weight: bold;
+}
+p.comment{
+    margin-top: 2px;
+}
