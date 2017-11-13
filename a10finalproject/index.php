@@ -2,8 +2,8 @@
 <body>
 	<div id="home-page">
 		<div class="wrap">
-			<?php require_once('header.php') 
-
+			<?php require_once('header.php') ;
+				
 			?>
 			
 		
@@ -101,7 +101,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="">
+								<?php echo '<img src="'. $path.$image .' " alt="photo"/>'; ?>
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
