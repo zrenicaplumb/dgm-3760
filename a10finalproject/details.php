@@ -1,6 +1,7 @@
 <?php 
-	$id = $_GET['id'];
-	if (isset($_GET['id'])) {
-		# code...
+	if(isset($_GET['id'])) {
+		$id = $_GET['id'];
+		echo $id;
+	
 	}
 ?>

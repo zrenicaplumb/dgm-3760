@@ -1,3 +1,71 @@
-img{
-	width: 200px;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+header img{
+	width: 100px;
 }
+header{
+	background: #20A4F3;
+}
+header .logo{
+	margin: 10px;
+	    margin-left: 50px;
+}
+.search{
+	    float: right;
+    top: 38px;
+    position: relative;
+    margin-right: 50px;
+}
+.login{
+	 float: right;
+    top: 40px;
+    position: relative;
+    margin-right: 15px;
+    color: #fff;
+}
+button {
+        position: relative;
+    padding: 3px 6px;
+    top: 0px;
+    left: -2px;
+}
+
+body{
+	background: #F6F7F8;
+  font-family: 'Open Sans', sans-serif;
+}
+.container h2{
+	position: relative;
+	top:20px;
+}
+.movie-list img{
+	width: 100%;
+	margin:10px 0;
+
+}
+.view-details{
+	display: block;
+	text-align: center;
+}
+form button, form a, form input{
+	display: block;
+	margin: 10px 0;
+}
+form{
+	width: 350px;
+	background: red;
+	margin: auto;
+	display: block;
+}
+form h2{
+	top: initial;
+	margin: initial;
+}
+footer{
+	background:#FF3366;
+}
+.row{
+	margin-top:40px;
+}
+
+
+
