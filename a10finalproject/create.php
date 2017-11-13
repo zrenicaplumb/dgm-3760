@@ -20,10 +20,8 @@
 				</form>
 			</div>
 		</div>  
-		<footer>
-			
-		</footer>
+		
 	</div>
-	
+	<?php require_once('footer.php');?>
 </body>
 </html>

@@ -10,21 +10,19 @@
 			</div>
 			<div class="container">
 				
-				<form action="authorize.php" method="POST" enctype="multipart/form-data">
+				<form action="login2.php" method="POST" enctype="multipart/form-data">
 					<h2>login</h2>
 					<input type="text" name="email" value placeholder="Email">
 					<input type="password" name="password" value placeholder="Password">
 					<button type="submit" name="submit">Login</button>
 					<a href="create.php">Create an Account</a>
-					<a href="authorize.php">Login as Administrator</a>
+					<a href="edit.php">Login as Administrator</a>
 
 				</form>
 			</div>
 		</div>  
-		<footer>
-			
-		</footer>
+		
 	</div>
-	
+	<?php require_once('footer.php');?>
 </body>
 </html>

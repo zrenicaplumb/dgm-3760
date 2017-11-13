@@ -76,6 +76,15 @@ form h2{
 
 
 }
+select{
+	margin-bottom: 20px;
+	display: block;
+}
+textarea {
+    display: block;
+    width: 100%;
+
+}
 form a{
 	color: #fff;
 	text-decoration: underline;
@@ -87,10 +96,20 @@ form a:hover{
 	color:#fff;
 }
 footer{
-	background:#FF3366;
+	background:#011627;
+	padding: 40px;
+}
+footer a{
+	color:#fff;
+	text-decoration: underline;
 }
 .row{
 	margin-top:40px;
+}
+input[type=file] {
+    margin-top:0;
+        left: -6px;
+    position: relative;
 }
 
 
