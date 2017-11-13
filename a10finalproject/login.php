@@ -9,22 +9,7 @@
 <body>
 	<div id="login-page">
 		<div class="wrap">
-			<header>
-				<nav>
-					<a href="index.php">
-						<img class="logo" src="img/logo.png">
-					</a>
-					
-					<div class="search">
-						<input type="text" name="search" class="search-button">
-						<button type="submit">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</button>
-					</div>
-					<a class="login" href="login.php">Login</a>
-					<a href=""></a>
-				</nav>
-			</header>
+			<?php require_once('header.php') ?>
 			<div class="row">
 				<!-- <div class="col-xs-12 col-sm-6 col-md-4">
 					
@@ -34,8 +19,8 @@
 				
 				<form>
 					<h2>login</h2>
-					<input type="text" name="email" value="Email">
-					<input type="password" name="password" value placeholder="password">
+					<input type="text" name="email" value placeholder="Email">
+					<input type="password" name="password" value placeholder="Password">
 					<button type="submit" name="submit">Login</button>
 					<a href="">Create an Account</a>
 

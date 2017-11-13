@@ -9,13 +9,17 @@ header .logo{
 	margin: 10px;
 	    margin-left: 50px;
 }
+nav a{
+	color:#fff;
+
+}
 .search{
 	    float: right;
     top: 38px;
     position: relative;
     margin-right: 50px;
 }
-.login{
+.login, .home{
 	 float: right;
     top: 40px;
     position: relative;
@@ -33,13 +37,14 @@ body{
 	background: #F6F7F8;
   font-family: 'Open Sans', sans-serif;
 }
-.container h2{
+#home-page .container h2{
 	position: relative;
 	top:20px;
 }
 .movie-list img{
 	width: 100%;
 	margin:10px 0;
+	max-height: 310px;
 
 }
 .view-details{
@@ -48,17 +53,36 @@ body{
 }
 form button, form a, form input{
 	display: block;
-	margin: 10px 0;
+	margin: 20px 0;
 }
 form{
 	width: 350px;
-	background: red;
+	background: #FF3366;
 	margin: auto;
 	display: block;
+	padding: 20px;
+}
+form button{
+	    padding: 7px 15px;
+	 margin-left:2px;
+}
+form input{
+	width: 100%;
+	padding: 5px;
 }
 form h2{
 	top: initial;
 	margin: initial;
+
+
+}
+form a{
+	color: #fff;
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+form a:hover{
+	color:#fff;
 }
 footer{
 	background:#FF3366;

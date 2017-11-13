@@ -9,22 +9,7 @@
 <body>
 	<div id="home-page">
 		<div class="wrap">
-			<header>
-				<nav>
-					<a href="index.php">
-						<img class="logo" src="img/logo.png">
-					</a>
-					
-					<div class="search">
-						<input type="text" name="search" class="search-button">
-						<button type="submit">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</button>
-					</div>
-					<a class="login" href="login.php">Login</a>
-					<a href=""></a>
-				</nav>
-			</header>
+			<?php require_once('header.php') ?>
 			
 		
 			<div class="row">
@@ -75,19 +60,19 @@
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/fight.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/gladiator.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/arn.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
@@ -95,25 +80,25 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/warrior.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/vampire.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/shawshank.jpeg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
-								<img src="img/empire.jpg">
+								<img src="img/django.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
