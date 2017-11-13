@@ -5,7 +5,7 @@
 		</a>
 		
 		<div class="search">
-			<input type="text" name="search" class="search-button">
+			<input type="text" name="search" class="search-button" placeholder="Search">
 			<button type="submit">
 				<i class="fa fa-search" aria-hidden="true"></i>
 			</button>

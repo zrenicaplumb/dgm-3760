@@ -80,6 +80,8 @@ form a{
 	color: #fff;
 	text-decoration: underline;
 	margin-bottom: 0;
+	display: inline-block;
+	    margin: 0 10px;
 }
 form a:hover{
 	color:#fff;
