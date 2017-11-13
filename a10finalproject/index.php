@@ -3,7 +3,7 @@
 	<div id="home-page">
 		<div class="wrap">
 			<?php require_once('header.php') ;
-				
+
 			?>
 			
 		
@@ -19,7 +19,7 @@
 					<h2>Movies</h2>
 					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-3">
-							<a href="details.php">
+							<a href="details.php?id=10">
 								<img src="img/alien.jpg">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
