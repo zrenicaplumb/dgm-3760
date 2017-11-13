@@ -2,7 +2,9 @@
 <body>
 	<div id="home-page">
 		<div class="wrap">
-			<?php require_once('header.php') ?>
+			<?php require_once('header.php') 
+
+			?>
 			
 		
 			<div class="row">
@@ -74,6 +76,32 @@
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php">
 								<img src="img/warrior.jpg">
+								<a class="view-details" href="details.php">View Details</a>
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<a href="details.php">
+								<img src="img/vampire.jpg">
+								<a class="view-details" href="details.php">View Details</a>
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<a href="details.php">
+								<img src="img/shawshank.jpeg">
+								<a class="view-details" href="details.php">View Details</a>
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<a href="details.php">
+								<img src="img/django.jpg">
+								<a class="view-details" href="details.php">View Details</a>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<a href="details.php">
+								<img src="">
 								<a class="view-details" href="details.php">View Details</a>
 							</a>
 						</div>
