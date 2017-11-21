@@ -1,0 +1,122 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+	background: rgb(52,58,63);
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+}
+p.hello {
+    display: block;
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+    top: -5px;
+    color: #fff;
+}
+h2.hello2{
+    text-align: center;
+    color: #fff;
+}
+.list-wrap, form {
+    width: 35%;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    margin-bottom: 45px;
+    margin-top: 100px;
+}
+
+.list-wrap h2, form h2{
+
+    text-align: center;
+    color: rgb(52,58,63);
+    margin-top: 0;
+    font-weight: 100;
+  
+
+}
+.list-wrap input, form input{
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+	padding: 12px 0;
+	font-size: 14px;
+	text-indent: 4px;
+}
+.list-wrap .add, .list-wrap .save, form button{
+    margin: auto;
+    display: block;
+    background: rgb(0,167,92);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    cursor: pointer;
+}
+.list-wrap .add{
+    margin-bottom: 20px;
+}
+.list-wrap a, form a{
+        color: rgb(52,58,63);
+    text-decoration: none;
+    margin: 10px 0;
+    margin-bottom: 0;
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+}
+.list-wrap a:hover{
+	text-decoration: underline;
+
+}
+ul{
+    margin:0 0;
+}
+.list li.task{
+       background: lightgray;
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    left: -20px;
+    margin: 2px 0;
+    cursor: pointer;
+}
+.list li.task:hover{
+    background:rgb(240,240,240);
+    transition: .3s all;
+}
+button.delete{
+    background: rgb(255,69,81);
+    padding: 10px;
+    float: right;
+    display: inline-block;
+    top: -10px;
+    position: relative;
+    right: -10px;
+    border: none;
+}
+.clear{
+    clear: both;
+}
+.not-found{
+        text-align: center;
+    color: red;
+    margin-bottom: 20px;
+    position: relative;
+    top: 182px;
+}
+button.save.clear{
+    margin-top:20px;
+}
+

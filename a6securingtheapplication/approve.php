@@ -6,7 +6,9 @@
 </head>
 <body>
 
-	<?php require_once('header.php');
+	<?php 
+	require_once('authorize.php');
+	require_once('header.php');
 		require_once('variables.php');
 
 		$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('Could not connect to db.');

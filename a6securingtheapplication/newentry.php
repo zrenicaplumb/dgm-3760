@@ -26,7 +26,7 @@
 			<label for="comment">Comment:</label>
 			<textarea name="comment" cols="80" rows="6"></textarea>
 		</fieldset>
-		<input type="hidden" name="id" value="">
+		
 		<input class="" name="submit" type="submit" value="submit"></input>
 	</form>
 	
