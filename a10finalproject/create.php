@@ -12,8 +12,8 @@
 				
 				<form action="create2.php" method="POST" enctype="multipart/form-data">
 					<h2>Create Account</h2>
-					<input type="text" name="username" value placeholder="Username">
-					<input type="password" name="password" value placeholder="Password">
+					<input type="text" name="username" required value placeholder="Username">
+					<input type="password" name="password" required value placeholder="Password">
 					<button type="submit" name="submit">Create</button>
 					<a href="login.php">Log in</a>
 					<a href="authorize.php">Login as Administrator</a>

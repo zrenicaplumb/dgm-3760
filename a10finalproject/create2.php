@@ -4,9 +4,6 @@
 		$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('Connection failed.');
 		$username = mysqli_real_escape_string($dbconnection, trim($_POST['username'])) ;
 		$password = mysqli_real_escape_string($dbconnection, trim($_POST['password'])) ;
-		
-		// $query = "INSERT INTO a10users (username, password) VALUES ('$username','$password')";
-		// $result = mysqli_query($dbconnection, $query) or die("Query failed.");
 		if(!empty($username) && !empty($password)){
 			$query = "SELECT * FROM a10users WHERE username = '$username'";
 			$alreadyexists = mysqli_query($dbconnection, $query) or die('Query failed.');
