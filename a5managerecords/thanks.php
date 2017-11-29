@@ -39,6 +39,10 @@
 			echo "OOPS that file is in the wrong format.";
 			$validImage = false;
 		}
+
+
+
+		
 		//destination
 		$destination =  $first . $last . time() . '.' . $ext;
 		$filepath = 'img/';
@@ -53,7 +57,7 @@
 			VALUES ('$first','$last','$phone','$email','$destination')";
 			$result = mysqli_query($dbconnection, $query) or die ('Query failed.');
 			mysqli_close($dbconnection);
-			echo $query;
+			
 
 		} 
 
