@@ -21,7 +21,8 @@
 				$query = "SELECT * FROM a10movies";
 				$result = mysqli_query($dbconnection, $query) or die('Query failed.');
 				while ($row = mysqli_fetch_array($result)) {
-					
+					echo '<img class="movie-image" src=img/' . $row['image'] . '>';
+					 
 				}
 				
 					
