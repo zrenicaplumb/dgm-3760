@@ -19,6 +19,8 @@ p.hello {
     padding: 20px;
     top: -5px;
     color: #fff;
+    margin: auto;
+    clear: both;
 }
 h2.hello2{
     text-align: center;
@@ -118,5 +120,20 @@ button.delete{
 }
 button.save.clear{
     margin-top:20px;
+}
+nav{
+    text-align: center;
+        margin-top: 50px;
+}
+ul{
+    padding: 0;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+a {
+    color: #fff;
+    text-decoration: none;
 }
 

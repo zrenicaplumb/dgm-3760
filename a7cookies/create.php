@@ -1,30 +1,26 @@
-<?php
+ <?php
 	require_once('variables.php');
 	if (isset($_POST['submit'])) {
 		$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('Connection failed.');
-		$firstname = trim($_POST['firstname']);
-		$lastname = trim($_POST['lastname']);
-		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
-		
+		$firstname = mysqli_real_escape_string($dbconnection, trim($_POST['firstname']));
+		$lastname = mysqli_real_escape_string($dbconnection, trim($_POST['lastname']));
+		$username = mysqli_real_escape_string($dbconnection, trim($_POST['username'])) ;
+		$password = mysqli_real_escape_string($dbconnection, trim($_POST['password'])) ;
+
 		if(!empty($username) && !empty($password)){
 			$query = "SELECT * FROM a7cookies WHERE username = '$username'";
-
 			$alreadyexists = mysqli_query($dbconnection, $query) or die('Query failed.');
-
 			if (mysqli_num_rows($alreadyexists) == 0) {
-
-				$query = "INSERT INTO a7cookies (firstname, lastname, username, password) VALUES ('$firstname', '$lastname', $username', '$password') ";
-
+				$query = "INSERT INTO a7cookies (firstname, lastname, username, password) VALUES ('$firstname','$lastname', '$username', '$password') ";
 				mysqli_query($dbconnection, $query) or die('Insert query failed.');
 				echo '<p>Your account has been created!</p>';
-				echo '<br><a href="login.php">Login to your new account.</a>';
+				echo '<br><a href="login.php">Go to login page</a>';
 				mysqli_close($dbconnection);
-				
-			}	
+				exit();
+			}
 			else{
 				echo '<p class="error">An account already exists with this username, use a different username.';
-				echo '<br><a href="login.php">Go to login page.</a>';
+				echo '<br><a href="create.php">Return to create account</a>';
 			}
 		}
 		
