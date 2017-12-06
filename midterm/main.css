@@ -16,24 +16,27 @@ nav{
 	margin: 20px auto;
 	text-align: center;
 }
-#add-page form{
+ form{
 	width: 60%;
 	margin: 40px auto;
 	background: rgb(22,122,165);
 	padding: 20px;
 	color: #fff;
 }
-#add-page form input{
+ form input{
 	display: block;
 	width: 100%;
 }
-#add-page form label{
+ form label{
 	margin-top:20px;
 }
-#add-page form button{
+ form button{
 	display: block;
 	margin: auto;
     margin-top: 25px;
 
 
+}
+.bolded{
+	font-weight: bold;
 }

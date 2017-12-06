@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Employee database</title>
+	<title>Midterm Project - Employee Database</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script type="text/javascript" src="main.js"></script>

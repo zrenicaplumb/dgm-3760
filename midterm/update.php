@@ -9,22 +9,37 @@
 
                 
                 $dbconnection = mysqli_connect(HOST, USER, PASSWORD, DB_NAME) or die('Connection failed.');
-                $query = "UPDATE a5motorcyclecompetition SET first='$first', last='$last', phone='$phone', email='$email' WHERE id='$id'";
+                $query = "SELECT * FROM midterm_employees WHERE id='$employee_id' ";
                 
                 $result = mysqli_query($dbconnection, $query) or die('Query failed.');
 
                 $found = mysqli_fetch_array($result);
 
 
+                if (isset($_POST['submit'])) {
+                    $id = $_POST['id'];
+                    $firstname = $_POST['firstname'];
+                    $lastname = $_POST['lastname'];
+                    $expertise = $_POST['expertise'];
+                    $phone = $_POST['phone'];
+                    $email = $_POST['email'];
+                    $about = $_POST['about'];
+                    $photo = $_POST['photo'];
+                    $dbconnection = mysqli_connect(HOST, USER, PASSWORD, DB_NAME) or die('Connection failed.');
+                    $query = "UPDATE midterm_employees SET firstname='$firstname', lastname='$lastname', expertise='$expertise', phone='$phone', email='$email', about='$about', photo='$photo' WHERE id='$id'"; 
+                    $result = mysqli_query($dbconnection, $query) or die('query failed.');
+                    mysqli_close($dbconnection);
+                   header("Location: index.php"); 
 
-    
+                }
+        
     
    
     
             ?>
            
              <form method="POST" enctype="multipart/form-data" action="update.php">
-                    <h2>Add Employee</h2>
+                    <h2>Update Employee</h2>
                     <label for="firstname">First Name</label>
                     <input type="text" name="firstname" value="<?php echo $found['firstname'];?>">
                     <label for="lastname">Last Name</label>
@@ -37,8 +52,8 @@
                     <input type="email" name="email" value="<?php echo $found['email'];?>">
                     <label for="about">About</label>
                     <input type="text" name="about" value="<?php echo $found['about'];?>">
-                    <label for="picture">Picture</label>
-                    <input type="file" name="picture" >
+                    <label for="photo">photo</label>
+                    <input type="file" name="photo">
                     <input type="hidden" name="id" value="<?php echo $found['id'];?>">
                     <button type="submit" name="submit">Submit</button>
                 </form>
