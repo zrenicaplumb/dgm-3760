@@ -7,12 +7,10 @@
             $query = "SELECT * FROM midterm_employees WHERE id='$employee_id' ";
             $result = mysqli_query($dbconnection, $query) or die('Query failed.');
 		?>
-		<div class="row">
-			<div class="container">
+	
 				<div class="list">
 					<?php
 					 while ($row = mysqli_fetch_array($result)) {
-			            	
 			            	echo '<img src=img/'.$row['photo'].'>';
 			            	echo '<p>Name: ' . $row['firstname'] . ' ' . $row['lastname'].'</p>';
 			            	echo '<p>Expertise: ' . $row['expertise'] . '</p>';
@@ -23,8 +21,7 @@
 			            }
 					?>
 				</div>
-			</div>
-		</div>
+			\
 	</body>
 </div>
 </html>

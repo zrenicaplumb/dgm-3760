@@ -1,9 +1,8 @@
 <?php require_once('head.php'); ?>
 	<div class="list-page">
 		<body>
-			<div class="list-head">
-				<div class="row">
-					<div class="container">
+			
+			
 						<div class="list">
 							<?php
 								$dbconnection = mysqli_connect(HOST, USER, PASSWORD, DB_NAME) or die('Connection failed.');
@@ -21,9 +20,8 @@
 								mysqli_close($dbconnection);
 							?>
 						</div>
-					</div>
-				</div>
-			</div>
+				
+			
 		</body>
 	</div>
 

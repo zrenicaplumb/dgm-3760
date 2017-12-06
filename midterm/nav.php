@@ -6,8 +6,8 @@
 		<li>
 			<a href="add.php">Add an Employee</a>
 		</li>
-		<li>
+		<!-- <li>
 			<a href="">something else</a>
-		</li>
+		</li> -->
 	</ul>
 </nav>

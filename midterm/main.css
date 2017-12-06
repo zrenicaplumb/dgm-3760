@@ -1,20 +1,31 @@
 body{
 	font-family: sans-serif;
 	margin: 0;
-	/*background: rgb(34,34,34);*/
+	background: #333;
 }
 .list{
 	background: lightgray;
 	padding: 20px;
+	width: 60%;
+	margin: 40px auto;
 }
+/*.list p, .list a{
+	color: #fff;
+}*/
 ul li{
 	list-style: none;
 	display: inline-block;
 	margin: 0 10px;
 }
+nav a{
+	color: #fff;
+	font-size: 20px;
+}
 nav{
 	margin: 20px auto;
+	margin-top:40px;
 	text-align: center;
+
 }
  form{
 	width: 60%;
@@ -37,9 +48,13 @@ nav{
 
 
 }
+#delete-page form{
+	background: lightgray;
+}
 .bolded{
 	font-weight: bold;
 }
 img{
 	width:300px;
+	margin: 20px 0;
 }
