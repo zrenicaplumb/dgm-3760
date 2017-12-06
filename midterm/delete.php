@@ -4,10 +4,6 @@ require_once('authorize.php');
  ?>
 	<div class="delete-page">
 		<body>
-		
-					
-			
-			
 				<?php
 					$employee_id = $_GET['id'];
 					$dbconnection = mysqli_connect('localhost','root','','dgm3760') or die('Connection Failed');
@@ -19,17 +15,20 @@ require_once('authorize.php');
 					}
 					$query = "SELECT * FROM midterm_employees WHERE id=$employee_id";
 					$result = mysqli_query($dbconnection, $query) or die('Query failed');
-					$found = mysqli_fetch_array($result);
+					
+					
 				 ?>
-		
 			<form action="delete.php" method="POST">
 				<h1>Delete this employee?</h1>
 				<?php 
-					echo "<h2>" . $found['firstname'] . ' ' . $found['lastname'] . '<h2>';
-					echo $found['photo'];
-					echo '<p>';
-					echo $found['email'];
-					echo '<br>';
+					while ($row = mysqli_fetch_array($result)) {
+							echo "<h2>" . $row['firstname'] . ' ' . $row['lastname'] . '<h2>';
+							echo '<img src=img/'.$row['photo'].'>';
+							echo '<p>';
+							echo $row['email'];
+							echo '<br>';
+						}
+					
 				?>
 				<input type="hidden" name="id" value="<?php echo $found['id'];?>">
 				<button type="submit" name="submit" value="DELETE THIS PERSON">Delete</button>
