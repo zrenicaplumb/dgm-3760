@@ -20,7 +20,7 @@
 					<h2>Movies</h2>
 					<div class="row">
 				<?php 
-				$id = 1;
+				
 				
 				$dbconnection = mysqli_connect(HOST, USER, PASSWORD, DB_NAME) or die('Connection failed.');
 				$query = "SELECT * FROM a10movies";

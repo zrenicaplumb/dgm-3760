@@ -1,0 +1,39 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+	/*background: rgb(34,34,34);*/
+}
+.list{
+	background: lightgray;
+	padding: 20px;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+nav{
+	margin: 20px auto;
+	text-align: center;
+}
+#add-page form{
+	width: 60%;
+	margin: 40px auto;
+	background: rgb(22,122,165);
+	padding: 20px;
+	color: #fff;
+}
+#add-page form input{
+	display: block;
+	width: 100%;
+}
+#add-page form label{
+	margin-top:20px;
+}
+#add-page form button{
+	display: block;
+	margin: auto;
+    margin-top: 25px;
+
+
+}
