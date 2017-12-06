@@ -31,7 +31,7 @@
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<a href="details.php?id='.$row['id'].'">
 								<img class="movie-img" src=img/'.$row['image'].'>
-								<a class="view-details" href="details.php">View Details</a>
+								<a class="view-details" href="details.php?id='.$row['id'].'">View Details</a>
 							</a>
 						</div>
 						';

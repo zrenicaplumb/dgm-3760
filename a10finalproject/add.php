@@ -5,8 +5,8 @@
 	require_once('variables.php');
 	if (isset($_POST['submit'])) {
 		
-		
-		$title = preg_replace('/\s+/', '', $_POST['title']);
+		// $title = preg_replace('/\s+/', '', $_POST['title']);
+		$title = $_POST['title'];
 		$rating = $_POST['rating'];
 		$description = $_POST['description'];	
 		$path = 'img/';
@@ -18,6 +18,7 @@
 			$dbconnection = mysqli_connect(HOST, USER, PASSWORD, DB_NAME) or die('Connection failed.');
 			$query = "INSERT INTO a10movies (image, title, rating, description) VALUES ('$image','$title','$rating','$description')";
 			$result = mysqli_query($dbconnection, $query) or die('Query failed.');
+
 		}
 	
 
