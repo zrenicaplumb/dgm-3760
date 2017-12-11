@@ -1,22 +1,24 @@
 <?php
 	require_once('variables.php');
-	$id = $_GET['id'];
+	 $id = $_GET['id'];
 	
 	$dbconnection = mysqli_connect(HOST, USER, PASSWORD, DB_NAME) or die('Connection failed.');
 	$query = "SELECT * FROM a10movies WHERE id=$id";
 	$result = mysqli_query($dbconnection, $query) or die('Query failed.');
 		
 	$found = mysqli_fetch_array($result);
-	// if (isset($_POST['submit'])) {
+	if (isset($_POST['submit'])) {
+		$id = $_POST['id'];
+
 		$title = $_POST['title'];
 		$rating = $_POST['rating'];
-		$id = $_POST['id'];
 		$image = $_POST['image'];
 		$description = $_POST['description'];
 		$query = "UPDATE a10movies SET image='$image', title='$title', rating='$rating', description='$description' WHERE id=$id";
-
 		$found = mysqli_query($dbconnection, $query);
-	// }
+		mysqli_close($dbconnection);
+		
+	 }
 ?>
 <?php require_once('head.php'); ?>
 <?php require_once('header.php') ?>
@@ -31,6 +33,6 @@
         <label for="image">Image</label>
         <input type="file" name="image">
         <input type="hidden" name="id" value="<?php echo $found['id'];?>">
-        <button type="submit" name="submit" value="submit">Update</button>  
+        <button type="submit" name="submit">Update</button>  
     </form>
 <?php require_once('footer.php');?>

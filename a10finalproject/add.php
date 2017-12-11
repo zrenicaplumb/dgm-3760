@@ -5,8 +5,8 @@
 	require_once('variables.php');
 	if (isset($_POST['submit'])) {
 		
-		// $title = preg_replace('/\s+/', '', $_POST['title']);
-		$title = $_POST['title'];
+		$title = preg_replace('/\s+/', '', $_POST['title']);
+		
 		$rating = $_POST['rating'];
 		$description = $_POST['description'];	
 		$path = 'img/';
