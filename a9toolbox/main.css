@@ -1,0 +1,64 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+	background: #333;
+}
+.list{
+	background: lightgray;
+	padding: 20px;
+	width: 60%;
+	margin: 40px auto;
+}
+/*.list p, .list a{
+	color: #fff;
+}*/
+ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+nav a{
+	color: #fff;
+	font-size: 20px;
+}
+nav{
+	margin: 20px auto;
+	margin-top:40px;
+	text-align: center;
+
+}
+ form{
+	width: 60%;
+	margin: 40px auto;
+	background: rgb(22,122,165);
+	padding: 20px;
+	color: #fff;
+}
+ form input{
+	display: block;
+	width: 100%;
+}
+ form label{
+	margin-top:20px;
+}
+ form button{
+	display: block;
+	margin: auto;
+    margin-top: 25px;
+
+
+}
+#delete-page form{
+	background: lightgray;
+}
+.bolded{
+	font-weight: bold;
+}
+img{
+	width:300px;
+	margin: 20px 0;
+}
+textarea{
+	display: block;
+	width: 100%;
+}
