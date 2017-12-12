@@ -9,5 +9,7 @@
 		<li>
 			<a href="search.php">Search</a>
 		</li>
+		
 	</ul>
+
 </nav>

@@ -8,12 +8,47 @@
 				<div class="search">
 					<form action="search.php" method="POST" enctype="multipart/form-data">
 						<input type="text" name="search" class="search-button" placeholder="Search">
+						<h4 class="h4">Pick your favorite color</h4>
+						<input type="text" name="color" placeholder="favorite color:" required="true">
 						<button type="submit" name="submit">
 							<i class="fa fa-search" aria-hidden="true"></i>
 						</button>
 					</form>
+
 					 <?php 
+
+
 					 	if (isset($_POST['submit'])) {
+					 		$favcolor = $_POST['color'];
+
+							switch ($favcolor) {
+							    case "red":
+							        echo "Your favorite color is red!";
+							        break;
+							    case "blue":
+							        echo "Your favorite color is blue!";
+							        break;
+							    case "green":
+							        echo "Your favorite color is green!";
+							        break;
+							    case "yellow":
+							        echo "Your favorite color is yellow!";
+							        break;
+							    case "pink":
+							        echo "Your favorite color is pink!";
+							        break;
+							    case "black":
+							        echo "Your favorite color is black!";
+							        break; 
+							    case "purple":
+							        echo "Your favorite color is purple!";
+							        break;
+						        case "orange":
+							        echo "Your favorite color is orange!";
+							        break;     
+							    default:
+							        echo "Your favorite color is neither red, blue, nor green!";
+							}
 					 		$search = strtolower($_POST['search']);
 					 		$searchCleanUp = str_replace(',',' ', $search);
 					 		$searchTerms = explode(' ', $searchCleanUp);
